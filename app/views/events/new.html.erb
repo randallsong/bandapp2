@@ -1,0 +1,17 @@
+<h1>New Event</h1>
+
+<%= form_for :event, url: events_path do |f| %>
+  <p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </p>
+ 
+  <p>
+    <%= f.label :alcoholserved %><br>
+    <%= f.text_area :alcoholserved %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

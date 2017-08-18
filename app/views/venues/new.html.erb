@@ -1,0 +1,27 @@
+<h1>New Venue</h1>
+
+<%= form_for :venue, url: venues_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :city %><br>
+    <%= f.text_area :city %>
+  </p>
+
+    <p>
+    <%= f.label :state %><br>
+    <%= f.text_area :state %>
+  </p>
+
+    <p>
+    <%= f.label :familyfriendly %><br>
+    <%= f.text_area :familyfriendly %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

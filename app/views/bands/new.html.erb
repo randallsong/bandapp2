@@ -1,0 +1,22 @@
+<h1>New Band</h1>
+
+<%= form_for :band, url: bands_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :genre %><br>
+    <%= f.text_area :genre %>
+  </p>
+  
+  <p>
+    <%= f.label :explicitlyrics %><br>
+    <%= f.text_area :explicitlyrics %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
